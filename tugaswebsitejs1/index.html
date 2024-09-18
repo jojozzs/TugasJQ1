@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>TgsJq1</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="sep">
+        <h1 id="isi">Hello world</h1>
+        <button id="changetext">Click Here To Change Text</button>
+        </div>
+        <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $("#changetext").click(()=>{
+                $("#isi").text("Hello World 2");
+                $("#changetext").click(() =>{
+                    $("#isi").text("Hello World 3");
+                });
+            });
+        </script>
+    </body>
+</html>
